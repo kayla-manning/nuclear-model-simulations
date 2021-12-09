@@ -90,11 +90,11 @@
     # system of equations with the variance and mean
     
     cauchy_scores_a <- sapply(1:length(mus_a), 
-                            function(x) rcauchy(1, ctry_a_params$mu[x], 
-                                              sqrt(ctry_a_params$var[x])))
+                              function(x) rcauchy(1, ctry_a_params$mu[x], 
+                                                  sqrt(ctry_a_params$var[x])))
     cauchy_scores_b <- sapply(1:length(mus_b), 
-                             function(x) rcauchy(1, ctry_b_params$mu[x], 
-                                                sqrt(ctry_b_params$var[x])))
+                              function(x) rcauchy(1, ctry_b_params$mu[x], 
+                                                  sqrt(ctry_b_params$var[x])))
     
     # want to put our individual variable data together in a table... will
     # truncate scores at the end since maybe we want certain respects to allow
@@ -123,7 +123,7 @@
     mutate(across(cauchy_output:norm_output, 
                   function(x) ifelse(abs(x)>100, sign(x)*100, x))) %>% 
     select(rep, country, cauchy_output:norm_output)
-    
+  
   # now I want to determine which scenarios flagged danger with these output
   # scores... will first look at identical named distributions on each side
   
@@ -349,4 +349,4 @@
   }
   
 }
-  
+
