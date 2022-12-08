@@ -1,6 +1,6 @@
 # Automated Nuclear Command and Control: Simulating Two-Way Interactions
 
-Inspired by the Soviet Union's VRYAN model from the Cold War, this report examines the behavioral circumstances that could lead opposing nuclear command and control models to launch simultaneous attacks. Read the full report at [final_report.pdf](final_report.pdf).
+Inspired by the Soviet Union's VRYAN model from the Cold War, this report examines the behavioral circumstances that could lead opposing nuclear command and control models to launch simultaneous attacks. Read the full report at [`final_report.pdf`](final_report.pdf).
 
 ## File and directory descriptions
 
